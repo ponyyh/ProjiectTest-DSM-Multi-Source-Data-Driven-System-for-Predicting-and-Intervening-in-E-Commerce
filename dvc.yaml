@@ -1,0 +1,15 @@
+stages:
+  features:
+    cmd: python scripts/run_pipeline.py
+    deps:
+      - scripts/run_pipeline.py
+      - src/churn_prediction/features.py
+      - data/raw/users.csv
+      - data/raw/events.csv
+      - data/raw/orders.csv
+      - configs/config.yaml
+    outs:
+      - data/processed/features.csv
+      - models/churn_pipeline.joblib
+    metrics:
+      - reports/metrics.json

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.env
+data/raw/*.csv
+data/interim/*.csv
+data/processed/*.csv
+models/*.joblib
+reports/*.json
+reports/*.csv
+reports/*.png
