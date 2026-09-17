@@ -1,0 +1,10 @@
+random_state: 42
+observation_end: "2026-06-30"
+label_window_days: 30
+test_size: 0.2
+decision_threshold: 0.5
+paths:
+  raw: data/raw
+  processed: data/processed
+  models: models
+  reports: reports
